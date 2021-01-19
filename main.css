@@ -1,0 +1,143 @@
+* {
+	background-color: gainsboro;
+}
+
+.container {
+	height: 400px;
+	width: 100%;
+	margin:	auto;
+	margin-top: 100px;
+	max-width: 1000px;
+	padding: 10px;
+}
+
+.wrapperleft {
+	height: 100%;
+	width: 60%;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	height: 100%;
+	width: 40%;
+	float: right;
+	padding-left: 30px;
+}
+
+.workspace {
+	background-color: white;
+	height: 10%;
+	/*padding: 20px 20px 20px 20px;*/
+	padding: 20px;
+}
+
+.showstatus {
+	height: 80%;
+}
+
+.addgoods{
+	height: 100%;
+	width: 100%;
+}
+
+.fontsettle{
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.goodstatus{
+	text-align: center;
+	padding: 5px 5px 5px 5px;
+	height: 25px;
+	background-color: #E8E8E8;
+	display: inline-block;
+	border-radius: 5px;
+	color: rgba(0,0,0,.6);
+}
+
+.dot{
+	text-align: center;
+	height: 18px;
+	width: 18px;
+	padding: 4px 4px 4px 4px;
+	padding-bottom: 4px;
+	background-color: orange;
+	border-radius: 50%;
+	display: inline-block;
+	color: white;
+}
+
+.inputstyle{
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	font-size: 20px;
+	padding-top-bottom: 30%;
+	padding-left: 5%;
+	border-width: thin;
+	/* visibility: hidden; */
+}
+
+.addbuttonstyle{
+	box-sizing: border-box;
+	margin-left: 0px;
+	margin-right: 20px;
+	height: 100%;
+	width: 30%;
+	font-size: 25px;
+	border: none;
+	color: white;
+	background-color: #2185D0;
+	font-weight: 700;
+}
+
+.controlbutton{
+	text-align: center;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	border: none;
+	color: white;
+	font-weight: 700;
+}
+
+.amountofgood{
+	background-color: lightgray;
+	text-align: center;
+	height: 30px;
+	width: 40px;
+	border-radius: 5px;
+	border: none;
+	display: inline-block;
+	padding-top: 10px;
+	font-weight: 700;
+	color: rgba(0,0,0,.6);
+}
+
+.buybutton{
+	box-sizing: border-box;
+	height: 40px;
+	width: 80px;
+	text-align: center;
+	background-color: ghostwhite;
+	border-radius: 5px;
+	border: none;
+	float: right;
+	margin-right: 5px;
+	font-weight: 700;
+	box-shadow: 0px 2px gray;
+}
+
+.cancelbutton{
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	background-color: #DB2828;
+	border-radius: 5px;
+	border: none;
+	float: right;
+	margin-right: 20px;
+	color: white;
+	font-weight: 700;
+}
