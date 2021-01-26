@@ -1,121 +1,138 @@
 <!DOCTYPE html>
 <html>
 
-<link	rel="stylesheet"	type="text/css"	
-href="main.css"	/>
+<link rel="stylesheet" type="text/css"	href="main.css"	/>
 
 <head>
 <title> Buylist </title>
 </head>
 
 <body>
-<div class = "container">
-	<div class="wrapper">
-		<div class = "showstatus">
-			<div class = "workspace fontsettle">
-				Залишилося
-			</div>
-			<div style = "margin-top: 1px; overflow: hidden;" class = "workspace">
-				<span class = "goodstatus">
-					Печиво
-					<span class="dot">
-						1
-					</span>
-				</span>
-				<span class = "goodstatus">
-					Помідори
-					<span class="dot">
-						1
-					</span>
-				</span>
-				<span class = "goodstatus">
-					Сир
-					<span class="dot">
-						1
-					</span>
-				</span>
-			</div>
-			<div class = "workspace fontsettle" style = "margin-top: 1px;">
-				Куплено
-			</div>
-			<div style = "height: 10%; margin-top: 1px; background-color: white;">
-			</div>
-			<!--<div> <> </div>-->
-		</div>
-	</div>
-	<div class="wrapperleft">
-		<div class = "addgoods">
-			<div class = "workspace" style = "height: 91px; width: 100%; padding: 20px 20px 20px 20px; box-sizing: border-box;">
-				<div style="float: left; height: 100%; background-color: white; width: 64%; box-sizing: border-box;">
-					<input	type="text”	name="FirstName" value="Назва товару" class = "inputstyle"">
-				</div>
-				<input	type="button" value = "Додати" class = "addbuttonstyle">
-					<!--Додати-->
+	<div class = "container">
+		<div class = "customer-interaction">
+			<div class="classic-div add-panel">
+				<input	type="text”	name="FirstName" value="Назва товару" class = "input-style">
+				<button type="button" class = "add-button" data-tooltip="Add good">
+					Додати
 				</button>
 			</div>
-			<div class="workspace" style = "height: 50px; margin-top: 1px;">
-				<div style = "height: 100%; width: 200px; float: left; background-color: white; font-size: 20px; padding-top: 12px;"> Печиво </div>
-				<div style="height: 41.5px; background-color: white; padding-top: 3.5px;">
-					<button type="button" class = "cancelbutton">
-						x
-					</button>
-					<button type="button" class = "buybutton">
-						Куплено
-					</button>
-					<button	type="button" class="controlbutton" style = "background-color: #DB2828; opacity: 0.45;">
+			<div class = "classic-div manage-good-wrapper">
+				<div class="manage-good-name">
+					Помідори
+				</div>
+				<div class = "manage-good-control-number">
+					<button type="button" class = "decrease-button" data-tooltip="Decrease">
 						-
 					</button>
-					<span class = "amountofgood">
+					<div class = "manage-good-display-number">
 						1
-					</span>
-					<button	type="button" class="controlbutton" style = "background-color: lightgreen;">
+					</div>
+					<button type="button" class = "increase-button" data-tooltip="Increase">
 						+
 					</button>
 				</div>
-			</div>
-			<div class="workspace" style = "height: 50px; margin-top: 1px;">
-				<div style = "height: 100%; width: 200px; float: left; background-color: white; font-size: 20px; padding-top: 12px;"> Помідори </div>
-				<div style="height: 41.5px; background-color: white; padding-top: 3.5px;">
-					<button type="button" class = "cancelbutton">
+				<div class = "manage-good-action">
+					<button type="button" class = "manage-good-cancel-button" data-tooltip="Remove good">
 						x
 					</button>
-					<button type="button" class = "buybutton">
+					<button type="button" class = "manage-good-buy-button" data-tooltip="Buy">
 						Куплено
-					</button>
-					<button	type="button" class="controlbutton" style = "background-color: #DB2828; opacity: 0.45;">
-						-
-					</button>
-					<span class = "amountofgood">
-						1
-					</span>
-					<button	type="button" class="controlbutton" style = "background-color: lightgreen;">
-						+
 					</button>
 				</div>
 			</div>
-			<div class="workspace" style = "height: 50px; margin-top: 1px;">
-				<div style = "height: 100%; width: 200px; float: left; background-color: white; font-size: 20px; padding-top: 12px;"> Сир </div>
-				<div style="height: 41.5px; background-color: white; padding-top: 3.5px;">
-					<button type="button" class = "cancelbutton">
-						x
-					</button>
-					<button type="button" class = "buybutton">
-						Куплено
-					</button>
-					<button	type="button" class="controlbutton" style = "background-color: #DB2828; opacity: 0.45;">
+			<div class = "classic-div manage-good-wrapper">
+				<div class="manage-good-name">
+					Печиво
+				</div>
+				<div class = "manage-good-control-number">
+					<button type="button" class = "decrease-button" data-tooltip="Decrease">
 						-
 					</button>
-					<span class = "amountofgood">
+					<div class = "manage-good-display-number">
 						1
-					</span>
-					<button	type="button" class="controlbutton" style = "background-color: lightgreen;">
+					</div>
+					<button type="button" class = "increase-button" data-tooltip="Increase">
 						+
+					</button>
+				</div>
+				<div class = "manage-good-action">
+					<button type="button" class = "manage-good-cancel-button" data-tooltip="Remove good">
+						x
+					</button>
+					<button type="button" class = "manage-good-buy-button" data-tooltip="Buy">
+						Куплено
+					</button>
+				</div>
+			</div>
+			<div class = "classic-div manage-good-wrapper" style = "border-bottom-left-radius: 4.5px; border-bottom-right-radius: 4.5px;">
+				<div class="manage-good-name">
+					Сир
+				</div>
+				<div class = "manage-good-control-number">
+					<button type="button" class = "decrease-button" data-tooltip="Decrease">
+						-
+					</button>
+					<div class = "manage-good-display-number">
+						1
+					</div>
+					<button type="button" class = "increase-button" data-tooltip="Increase">
+						+
+					</button>
+				</div>
+				<div class = "manage-good-action">
+					<button type="button" class = "manage-good-cancel-button" data-tooltip="Remove good">
+						x
+					</button>
+					<button type="button" class = "manage-good-buy-button" data-tooltip="Buy">
+						Куплено
 					</button>
 				</div>
 			</div>
 		</div>
+		<div class = "display-results">
+			<div class="classic-div cap" style="border-top-left-radius: 7px; border-top-right-radius: 7px;">
+				Залишилося
+			</div>
+			<div class = "classic-div goods-left" style="margin-top: 1px;">
+				<span class = "good-box">
+					<span style = "vertical-align: baseline; float: left; background-color: inherit;">
+						Помідори
+					</span>
+					<span class = "dot">
+						1
+					</span>
+				</span>
+				<span class = "good-box">
+					<span style = "vertical-align: baseline; float: left; background-color: inherit;">
+						Печиво
+					</span>
+					<span class = "dot">
+						1
+					</span>
+				</span>
+				<span class = "good-box">
+					<span style = "vertical-align: baseline; float: left; background-color: inherit;">
+						Сир
+					</span>
+					<span class = "dot">
+						1
+					</span>
+				</span>
+			</div>
+			<div class="classic-div cap" style="margin-top: 1px;">
+				Куплено
+			</div>
+			<div class = "goods-bought">
+			</div>
+		</div>
 	</div>
-</div>
+	<div class="badge">
+		<span class = "badge-label">Buy List</span>
+		<div class="author-revelation">
+			<div class="created-by-label">Created by:</div>
+			<div class = "my-name-label">Yur-Liubomysl Dekhtiar</div>
+		</div>
+	</div>
 </body>
 
 </html>
